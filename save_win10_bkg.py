@@ -38,7 +38,7 @@ for file in os.listdir(source):
             if im.size[0] > im.size[1]:
                 # Copy any images that are in landscape orientation
                 print(file, "{}x{}".format(*im.size), "copied")
-                copy2(src, dest)
+                copy2(src, dst)
     except Exception as e:
         # Print error, and ignore file for the future
         print("ERROR: can't process {}. Exception: {}:".format(file, e))
