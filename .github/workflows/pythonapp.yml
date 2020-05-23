@@ -34,7 +34,7 @@ jobs:
         pyinstaller --onefile save_win10_bkg.py
     - name: Upload release artifact
       uses: actions/upload-artifact@v2
-      with: |
+      with:
         name: save_win10_bkg.exe
         path: dist/save_win10_bkg.exe
     - name: Create Release
